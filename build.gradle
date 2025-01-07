@@ -1,0 +1,113 @@
+// Based on 'modern-forge-1.12-template' by by github@quat1024
+
+buildscript {
+    repositories {
+        maven { url = 'https://files.minecraftforge.net/maven' }
+        mavenCentral()
+    	gradlePluginPortal()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1+', changing: true
+        classpath "gradle.plugin.com.github.johnrengelman:shadow:7.1.2"
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'eclipse'
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+version = projectMCVersion + '-' + projectVersion
+group = projectGroup
+archivesBaseName = projectName
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+compileJava {
+    sourceCompatibility = '8'
+    targetCompatibility = '8'
+}
+
+repositories {
+    maven { url = 'https://www.cursemaven.com' }
+    maven { url = 'https://jitpack.io' }
+}
+
+configurations {
+	shade
+	implementation.extendsFrom shade	
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
+    
+    shade ('com.github.KaptainWutax:BiomeUtils:166f1757be') {
+        transitive = false
+    }
+    shade ('com.github.KaptainWutax:SeedUtils:b6a383113c') {
+        transitive = false
+    }
+    shade ('com.github.KaptainWutax:MCUtils:1bc39b7c89') {
+        transitive = false
+    }
+    shade ('com.github.KaptainWutax:NoiseUtils:2cf64e1d2e'){
+        transitive = false
+    }
+    shade ('com.github.KaptainWutax:MathUtils:5531c4a87b'){
+        transitive = false
+    }
+    
+    implementation fg.deobf('curse.maven:modern-beta-forge-805719:6039038')
+}
+
+tasks.named('shadowJar', com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar) {
+	archiveClassifier = ''
+    configurations = [project.configurations.shade]
+    relocate 'kaptainwutax', "${projectGroup}.relocated.kaptainwutax"
+    finalizedBy 'reobfShadowJar'
+}
+
+assemble.dependsOn shadowJar
+
+reobf {
+    shadowJar {}
+}
+
+minecraft {
+    mappings channel: 'stable', version: '39-1.12'
+    
+    runs {
+        client {
+            workingDirectory file("./run")
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+            mods { "${project.name}" { source sourceSets.main } }
+        }
+
+        server {
+            workingDirectory file("./run/server")
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+            mods { "${project.name}" { source sourceSets.main } }
+        }
+    }
+    
+    accessTransformers {
+        file('src/main/resources/META-INF/' + projectATFile)
+    }
+}
+
+processResources {
+    inputs.property 'version', project.version
+  
+    filesMatching('mcmod.info') {
+      expand 'version': project.version
+    }
+}
+
+jar {
+    manifest.attributes(
+        'FMLAT': projectATFile
+    )
+}
+
+sourceSets.all { it.output.resourcesDir = it.output.classesDirs.getFiles().iterator().next() }

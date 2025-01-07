@@ -1,0 +1,38 @@
+# ReleasePlusBiomeSource
+createWorld.customize.custom.biomeSource.modernbetareleaseplus.release_plus=Release Plus
+
+# Properties
+createWorld.customize.custom.modernbetareleaseplus=Modern Beta Release Plus
+createWorld.customize.custom.modernbetareleaseplus.generatorversion=Generator Version
+createWorld.customize.custom.modernbetareleaseplus.oceanbiome=Ocean Biome
+createWorld.customize.custom.modernbetareleaseplus.plainsbiome=Plains Biome
+createWorld.customize.custom.modernbetareleaseplus.desertbiome=Desert Biome
+createWorld.customize.custom.modernbetareleaseplus.extremehillsbiome=Extreme Hills Biome
+createWorld.customize.custom.modernbetareleaseplus.forestbiome=Forest Biome
+createWorld.customize.custom.modernbetareleaseplus.taigabiome=Taiga Biome
+createWorld.customize.custom.modernbetareleaseplus.swamplandbiome=Swampland Biome
+createWorld.customize.custom.modernbetareleaseplus.riverbiome=River Biome
+createWorld.customize.custom.modernbetareleaseplus.frozenoceanbiome=Frozen Ocean Biome
+createWorld.customize.custom.modernbetareleaseplus.frozenriverbiome=Frozen River Biome
+createWorld.customize.custom.modernbetareleaseplus.iceplainsbiome=Ice Plains Biome
+createWorld.customize.custom.modernbetareleaseplus.icemountainsbiome=Ice Mountains Biome
+createWorld.customize.custom.modernbetareleaseplus.mushroomislandbiome=Mushroom Island Biome
+createWorld.customize.custom.modernbetareleaseplus.mushroomislandshorebiome=Mushroom Island Shore Biome
+createWorld.customize.custom.modernbetareleaseplus.beachbiome=Beach Biome
+createWorld.customize.custom.modernbetareleaseplus.deserthillsbiome=Desert Hills Biome
+createWorld.customize.custom.modernbetareleaseplus.foresthillsbiome=Forest Hills Biome
+createWorld.customize.custom.modernbetareleaseplus.taigahillsbiome=Taiga Hills Biome
+createWorld.customize.custom.modernbetareleaseplus.extremehillsedgebiome=Extreme Hills Edge Biome
+createWorld.customize.custom.modernbetareleaseplus.junglebiome=Jungle Biome
+createWorld.customize.custom.modernbetareleaseplus.junglehillsbiome=Jungle Hills Biome
+
+# Presets
+createWorld.customize.custom.preset.modernbetareleaseplus.b1_8_1=Modern Beta 1.8.1
+createWorld.customize.custom.preset.modernbetareleaseplus.r1_0=Modern Release 1.0
+createWorld.customize.custom.preset.modernbetareleaseplus.r1_1=Modern Release 1.1
+createWorld.customize.custom.preset.modernbetareleaseplus.r1_6_4=Modern Release 1.6.4
+
+createWorld.customize.custom.preset.info.modernbetareleaseplus.b1_8_1=Based on Minecraft Beta 1.8.1
+createWorld.customize.custom.preset.info.modernbetareleaseplus.r1_0=Based on Minecraft 1.0
+createWorld.customize.custom.preset.info.modernbetareleaseplus.r1_1=Based on Minecraft 1.1
+createWorld.customize.custom.preset.info.modernbetareleaseplus.r1_6_4=Based on Minecraft 1.6.4
