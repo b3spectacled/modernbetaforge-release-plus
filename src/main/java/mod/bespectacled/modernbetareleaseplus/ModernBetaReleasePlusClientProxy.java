@@ -41,6 +41,6 @@ public class ModernBetaReleasePlusClientProxy implements ModernBetaReleasePlusPr
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.JUNGLE_HILLS, GuiPredicates.JUNGLE_HILLS_TEST);
         
         // Enable biome size setting for ReleasePlusBiomeSource
-        ModernBetaClientRegistries.GUI_PREDICATE.get(GuiPredicate.BIOME_SIZE).or(setting -> setting.biomeSource.equals(SettingTags.BIOME_SOURCE.toString()));
+        ModernBetaClientRegistries.GUI_PREDICATE.get(GuiPredicate.BIOME_SIZE).or(settings -> settings.biomeSource.equals(SettingTags.BIOME_SOURCE.toString()));
     }
 }
