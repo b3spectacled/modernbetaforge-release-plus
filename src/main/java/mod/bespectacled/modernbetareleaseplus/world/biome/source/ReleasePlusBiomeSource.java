@@ -2,8 +2,8 @@ package mod.bespectacled.modernbetareleaseplus.world.biome.source;
 
 import kaptainwutax.biomeutils.source.OverworldBiomeSource;
 import kaptainwutax.mcutils.version.MCVersion;
-import mod.bespectacled.modernbetaforge.api.world.biome.BiomeSource;
-import mod.bespectacled.modernbetaforge.api.world.biome.NoiseBiomeSource;
+import mod.bespectacled.modernbetaforge.api.world.biome.source.BiomeSource;
+import mod.bespectacled.modernbetaforge.api.world.biome.source.NoiseBiomeSource;
 import mod.bespectacled.modernbetaforge.world.setting.ModernBetaGeneratorSettings;
 import mod.bespectacled.modernbetareleaseplus.world.biome.BiomeMap;
 import mod.bespectacled.modernbetareleaseplus.world.setting.SettingTags;

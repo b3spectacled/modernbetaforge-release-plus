@@ -56,7 +56,7 @@ dependencies {
         transitive = false
     }
     
-    implementation fg.deobf('curse.maven:modern-beta-forge-805719:6039038')
+    implementation fg.deobf('curse.maven:modern-beta-forge-805719:6107624')
 }
 
 tasks.named('shadowJar', com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar) {

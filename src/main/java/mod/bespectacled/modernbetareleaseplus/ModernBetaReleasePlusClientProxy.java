@@ -40,7 +40,7 @@ public class ModernBetaReleasePlusClientProxy implements ModernBetaReleasePlusPr
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.JUNGLE, GuiPredicates.JUNGLE_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.JUNGLE_HILLS, GuiPredicates.JUNGLE_HILLS_TEST);
         
-        // Disable riverSize GUI option since it doesn't do anything here
-        ModernBetaClientRegistries.GUI_PREDICATE.get(GuiPredicate.RIVER_SIZE).and(factory -> !(factory.biomeSource.equals(SettingTags.BIOME_SOURCE.toString())));
+        // Enable biome size setting for ReleasePlusBiomeSource
+        ModernBetaClientRegistries.GUI_PREDICATE.get(GuiPredicate.BIOME_SIZE).or(setting -> setting.biomeSource.equals(SettingTags.BIOME_SOURCE.toString()));
     }
 }
