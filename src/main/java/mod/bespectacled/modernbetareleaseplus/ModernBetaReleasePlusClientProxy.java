@@ -26,8 +26,17 @@ public class ModernBetaReleasePlusClientProxy implements ModernBetaReleasePlusPr
             GuiCustomizePresets.PRESET_R1_6_4
         );
         
-        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.FROZEN_OCEAN, GuiPredicates.FROZEN_OCEAN_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.GENERATOR_VERSION, GuiPredicates.GENERATOR_VERSION_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.OCEAN, GuiPredicates.OCEAN_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.PLAINS, GuiPredicates.PLAINS_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.DESERT, GuiPredicates.DESERT_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.EXTREME_HILLS, GuiPredicates.HILLS_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.FOREST, GuiPredicates.FOREST_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.TAIGA, GuiPredicates.TAIGA_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.SWAMPLAND, GuiPredicates.SWAMPLAND_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.RIVER, GuiPredicates.RIVER_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.FROZEN_RIVER, GuiPredicates.FROZEN_RIVER_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.FROZEN_OCEAN, GuiPredicates.FROZEN_OCEAN_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.ICE_PLAINS, GuiPredicates.ICE_PLAINS_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.ICE_MOUNTAINS, GuiPredicates.ICE_MOUNTAINS_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.MUSHROOM_ISLAND, GuiPredicates.MUSHROOM_ISLAND_TEST);
