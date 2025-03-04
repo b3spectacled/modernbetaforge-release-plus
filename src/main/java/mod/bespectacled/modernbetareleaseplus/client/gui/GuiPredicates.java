@@ -33,7 +33,7 @@ public class GuiPredicates {
     public static final GuiPredicate JUNGLE_HILLS_TEST;
     
     private static boolean isReleasePlus(ModernBetaGeneratorSettings settings) {
-        return settings.biomeSource.equals(SettingTags.BIOME_SOURCE.toString());
+        return settings.biomeSource.equals(SettingTags.BIOME_SOURCE);
     }
     
     private static boolean isNewerOrEqualTo(ModernBetaGeneratorSettings settings, MCVersion version) {
