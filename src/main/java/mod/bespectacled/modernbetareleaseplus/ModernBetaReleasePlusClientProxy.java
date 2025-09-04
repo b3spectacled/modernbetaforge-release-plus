@@ -1,6 +1,5 @@
 package mod.bespectacled.modernbetareleaseplus;
 
-import mod.bespectacled.modernbetaforge.api.client.gui.GuiPredicate;
 import mod.bespectacled.modernbetaforge.api.registry.ModernBetaClientRegistries;
 import mod.bespectacled.modernbetareleaseplus.client.gui.GuiCustomizePresets;
 import mod.bespectacled.modernbetareleaseplus.client.gui.GuiPredicates;
@@ -27,6 +26,7 @@ public class ModernBetaReleasePlusClientProxy implements ModernBetaReleasePlusPr
         );
         
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.GENERATOR_VERSION, GuiPredicates.GENERATOR_VERSION_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.BIOME_SIZE, GuiPredicates.BIOME_SIZE_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.OCEAN, GuiPredicates.OCEAN_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.PLAINS, GuiPredicates.PLAINS_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.DESERT, GuiPredicates.DESERT_TEST);
@@ -48,8 +48,5 @@ public class ModernBetaReleasePlusClientProxy implements ModernBetaReleasePlusPr
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.EXTREME_HILLS_EDGE, GuiPredicates.EXTREME_HILLS_EDGE_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.JUNGLE, GuiPredicates.JUNGLE_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.JUNGLE_HILLS, GuiPredicates.JUNGLE_HILLS_TEST);
-        
-        // Enable biome size setting for ReleasePlusBiomeSource
-        ModernBetaClientRegistries.GUI_PREDICATE.get(GuiPredicate.BIOME_SIZE).or(settings -> settings.biomeSource.equals(SettingTags.BIOME_SOURCE));
     }
 }

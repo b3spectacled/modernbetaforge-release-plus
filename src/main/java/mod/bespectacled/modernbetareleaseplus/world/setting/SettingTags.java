@@ -6,6 +6,7 @@ import net.minecraft.util.ResourceLocation;
 public class SettingTags {
     public static final ResourceLocation BIOME_SOURCE = ModernBetaReleasePlus.createRegistryKey("release_plus");
     public static final ResourceLocation GENERATOR_VERSION = ModernBetaReleasePlus.createRegistryKey("generatorVersion");
+    public static final ResourceLocation BIOME_SIZE = ModernBetaReleasePlus.createRegistryKey("biomeSize");
 
     public static final ResourceLocation OCEAN = ModernBetaReleasePlus.createRegistryKey("oceanBiome");
     public static final ResourceLocation PLAINS = ModernBetaReleasePlus.createRegistryKey("plainsBiome");

@@ -7,6 +7,8 @@ import mod.bespectacled.modernbetareleaseplus.world.setting.SettingTags;
 
 public class GuiPredicates {
     public static final GuiPredicate GENERATOR_VERSION_TEST;
+    public static final GuiPredicate BIOME_SIZE_TEST;
+    
     public static final GuiPredicate OCEAN_TEST;
     public static final GuiPredicate PLAINS_TEST;
     public static final GuiPredicate DESERT_TEST;
@@ -42,6 +44,8 @@ public class GuiPredicates {
     
     static {
         GENERATOR_VERSION_TEST = new GuiPredicate(settings -> isReleasePlus(settings));
+        BIOME_SIZE_TEST = new GuiPredicate(GENERATOR_VERSION_TEST::test);
+        
         OCEAN_TEST = new GuiPredicate(GENERATOR_VERSION_TEST::test);
         PLAINS_TEST = new GuiPredicate(GENERATOR_VERSION_TEST::test);
         DESERT_TEST = new GuiPredicate(GENERATOR_VERSION_TEST::test);
