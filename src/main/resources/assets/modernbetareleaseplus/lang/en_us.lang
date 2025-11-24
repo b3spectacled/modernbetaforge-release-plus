@@ -4,6 +4,10 @@ createWorld.customize.custom.modernbetaforge.biomeSource.modernbetareleaseplus.r
 # Properties
 createWorld.customize.custom.modernbetareleaseplus=Modern Beta Release Plus
 createWorld.customize.custom.modernbetareleaseplus.generatorversion=Generator Version
+createWorld.customize.custom.modernbetareleaseplus.generatorversion.b1.8.1=Beta 1.8.1
+createWorld.customize.custom.modernbetareleaseplus.generatorversion.1.0=Release 1.0
+createWorld.customize.custom.modernbetareleaseplus.generatorversion.1.1=Release 1.1
+createWorld.customize.custom.modernbetareleaseplus.generatorversion.1.6.4=Release 1.6.4
 createWorld.customize.custom.modernbetareleaseplus.biomesize=Biome Size
 createWorld.customize.custom.modernbetareleaseplus.oceanbiome=Ocean Biome
 createWorld.customize.custom.modernbetareleaseplus.plainsbiome=Plains Biome
