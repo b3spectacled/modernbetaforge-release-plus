@@ -34,6 +34,10 @@ public class GuiPredicates {
     public static final GuiPredicate JUNGLE_TEST;
     public static final GuiPredicate JUNGLE_HILLS_TEST;
     
+    public static final GuiPredicate USE_DEEP_OCEANS_TEST;
+    public static final GuiPredicate DEEP_OCEAN_CHANCE_TEST;
+    public static final GuiPredicate DEEP_OCEAN_NOISE_SCALE_TEST;
+    
     private static boolean isReleasePlus(ModernBetaGeneratorSettings settings) {
         return settings.biomeSource.equals(SettingTags.BIOME_SOURCE);
     }
@@ -70,5 +74,9 @@ public class GuiPredicates {
 
         JUNGLE_TEST = new GuiPredicate(settings -> isReleasePlus(settings) && isNewerOrEqualTo(settings, MCVersion.v1_2_1));
         JUNGLE_HILLS_TEST = new GuiPredicate(JUNGLE_TEST::test);
+        
+        USE_DEEP_OCEANS_TEST = new GuiPredicate(settings -> isReleasePlus(settings));
+        DEEP_OCEAN_CHANCE_TEST = new GuiPredicate(settings -> isReleasePlus(settings) && settings.getBooleanProperty(SettingTags.USE_DEEP_OCEANS));
+        DEEP_OCEAN_NOISE_SCALE_TEST = new GuiPredicate(DEEP_OCEAN_CHANCE_TEST::test);
     }
 }

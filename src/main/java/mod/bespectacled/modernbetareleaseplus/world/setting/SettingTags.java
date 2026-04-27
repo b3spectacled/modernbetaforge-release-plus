@@ -29,4 +29,8 @@ public class SettingTags {
     public static final ResourceLocation EXTREME_HILLS_EDGE = ModernBetaReleasePlus.createRegistryKey("extremeHillsEdgeBiome");
     public static final ResourceLocation JUNGLE = ModernBetaReleasePlus.createRegistryKey("jungleBiome");
     public static final ResourceLocation JUNGLE_HILLS = ModernBetaReleasePlus.createRegistryKey("jungleHillsBiome");
+    
+    public static final ResourceLocation USE_DEEP_OCEANS = ModernBetaReleasePlus.createRegistryKey("useDeepOceans");
+    public static final ResourceLocation DEEP_OCEAN_CHANCE = ModernBetaReleasePlus.createRegistryKey("deepOceanChance");
+    public static final ResourceLocation DEEP_OCEAN_NOISE_SCALE = ModernBetaReleasePlus.createRegistryKey("deepOceanNoiseScale");
 }

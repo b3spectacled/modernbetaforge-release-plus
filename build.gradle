@@ -46,7 +46,7 @@ dependencies {
     shade ('com.github.KaptainWutax:SeedUtils:b6a383113c') {
         transitive = false
     }
-    shade ('com.github.KaptainWutax:MCUtils:1bc39b7c89') {
+    shade ('com.github.KaptainWutax:MCUtils:1bc39b7c89498c8a045c6944f18465238f9bb4cc') {
         transitive = false
     }
     shade ('com.github.KaptainWutax:NoiseUtils:2cf64e1d2e'){

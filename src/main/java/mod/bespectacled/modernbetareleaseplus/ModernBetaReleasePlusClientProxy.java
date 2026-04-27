@@ -48,5 +48,8 @@ public class ModernBetaReleasePlusClientProxy implements ModernBetaReleasePlusPr
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.EXTREME_HILLS_EDGE, GuiPredicates.EXTREME_HILLS_EDGE_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.JUNGLE, GuiPredicates.JUNGLE_TEST);
         ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.JUNGLE_HILLS, GuiPredicates.JUNGLE_HILLS_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.USE_DEEP_OCEANS, GuiPredicates.USE_DEEP_OCEANS_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.DEEP_OCEAN_CHANCE, GuiPredicates.DEEP_OCEAN_CHANCE_TEST);
+        ModernBetaClientRegistries.GUI_PREDICATE.register(SettingTags.DEEP_OCEAN_NOISE_SCALE, GuiPredicates.DEEP_OCEAN_NOISE_SCALE_TEST);
     }
 }
