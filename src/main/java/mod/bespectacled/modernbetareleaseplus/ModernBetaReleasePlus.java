@@ -76,6 +76,10 @@ public class ModernBetaReleasePlus {
             }
         ));
         ModernBetaRegistries.PROPERTY.register(SettingTags.BIOME_SIZE, new IntProperty(4, 1, 8, PropertyGuiType.SLIDER));
+        ModernBetaRegistries.PROPERTY.register(SettingTags.USE_DEEP_OCEANS, new BooleanProperty(false));
+        ModernBetaRegistries.PROPERTY.register(SettingTags.DEEP_OCEAN_CHANCE, new FloatProperty(0.5f, 0.0f, 1.0f, PropertyGuiType.SLIDER));
+        ModernBetaRegistries.PROPERTY.register(SettingTags.DEEP_OCEAN_NOISE_SCALE, new FloatProperty(5.0f, 1.0f, 20.0f, PropertyGuiType.SLIDER));
+        
         ModernBetaRegistries.PROPERTY.register(SettingTags.OCEAN, createBiomeProperty(BiomeTags.OCEAN));
         ModernBetaRegistries.PROPERTY.register(SettingTags.PLAINS, createBiomeProperty(BiomeTags.PLAINS));
         ModernBetaRegistries.PROPERTY.register(SettingTags.DESERT, createBiomeProperty(BiomeTags.DESERT));
@@ -97,10 +101,6 @@ public class ModernBetaReleasePlus {
         ModernBetaRegistries.PROPERTY.register(SettingTags.EXTREME_HILLS_EDGE, createBiomeProperty(BiomeTags.EXTREME_HILLS_EDGE));
         ModernBetaRegistries.PROPERTY.register(SettingTags.JUNGLE, createBiomeProperty(BiomeTags.JUNGLE));
         ModernBetaRegistries.PROPERTY.register(SettingTags.JUNGLE_HILLS, createBiomeProperty(BiomeTags.JUNGLE_HILLS));
-        
-        ModernBetaRegistries.PROPERTY.register(SettingTags.USE_DEEP_OCEANS, new BooleanProperty(false));
-        ModernBetaRegistries.PROPERTY.register(SettingTags.DEEP_OCEAN_CHANCE, new FloatProperty(0.5f, 0.0f, 1.0f, PropertyGuiType.SLIDER));
-        ModernBetaRegistries.PROPERTY.register(SettingTags.DEEP_OCEAN_NOISE_SCALE, new FloatProperty(5.0f, 1.0f, 20.0f, PropertyGuiType.SLIDER));
 
         ModernBetaModRegistry.INSTANCE.register(MODID, DATA_VERSION);
         ModernBetaRegistries.MOD_DATA_FIX.register(ModDataFixers.BIOME_SIZE_FIX_KEY, ModDataFixers.BIOME_SIZE_FIX);
