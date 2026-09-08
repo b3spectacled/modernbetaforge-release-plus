@@ -30,9 +30,15 @@ createWorld.customize.custom.modernbetareleaseplus.taigahillsbiome=Taiga Hills B
 createWorld.customize.custom.modernbetareleaseplus.extremehillsedgebiome=Extreme Hills Edge Biome
 createWorld.customize.custom.modernbetareleaseplus.junglebiome=Jungle Biome
 createWorld.customize.custom.modernbetareleaseplus.junglehillsbiome=Jungle Hills Biome
-createWorld.customize.custom.modernbetareleaseplus.usedeepoceans=Use Deep Oceans
+createWorld.customize.custom.modernbetareleaseplus.usedeepoceans=Deep Oceans
 createWorld.customize.custom.modernbetareleaseplus.deepoceanchance=Deep Ocean Chance
 createWorld.customize.custom.modernbetareleaseplus.deepoceannoisescale=Deep Ocean Noise Scale
+
+createWorld.customize.custom.modernbetareleaseplus.generatorversion.tooltip=The historical biome generator used to determine biome placement.
+createWorld.customize.custom.modernbetareleaseplus.biomesize.tooltip=Scales the biome distribution for Release Plus biome source. Due to how biome generators work in Release 1.6 and earlier, this does not affect river distribution.
+createWorld.customize.custom.modernbetareleaseplus.usedeepoceans.tooltip=Generate the Deep Ocean biome in portions of the Ocean biome.
+createWorld.customize.custom.modernbetareleaseplus.deepoceanchance.tooltip=Chance of the Deep Ocean biome generating in oceans.
+createWorld.customize.custom.modernbetareleaseplus.deepoceannoisescale.tooltip=Scales the noise used to determine Deep Ocean biome placement. Higher values will generate more varied placements.
 
 # Presets
 createWorld.customize.custom.preset.modernbetareleaseplus.b1_8_1=Modern Beta 1.8.1
