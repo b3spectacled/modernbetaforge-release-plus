@@ -34,7 +34,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class ModernBetaReleasePlus {
     public static final String MODID = "modernbetareleaseplus";
     public static final String NAME = "Modern Beta Release Plus";
-    public static final String VERSION = "1.10.0.0";
+    public static final String VERSION = "1.10.0.1";
     public static final String MCVERSION = "1.12.2";
     public static final String MODERN_BETA_MODID = "required-after:modernbetaforge@[1.10.0.0,1.11.0.0);";
     public static final int DATA_VERSION = 1410;
